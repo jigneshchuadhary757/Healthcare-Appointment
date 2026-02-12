@@ -1,0 +1,109 @@
+{
+ "actions": [],
+ "autoname": "PA-.YYYY.-.#####",
+ "creation": "2026-02-12 12:16:07.210598",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "patient_name",
+  "patient_contact",
+  "estimated_end_time",
+  "status",
+  "column_break_guua",
+  "appointment_date",
+  "appointment_time",
+  "service",
+  "total_amount",
+  "sales_invoice"
+ ],
+ "fields": [
+  {
+   "fieldname": "patient_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Patient Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "patient_contact",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Patient Contact",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_guua",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "appointment_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Appointment Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "appointment_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Appointment Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "service",
+   "fieldtype": "Link",
+   "label": "service",
+   "options": "Healthcare Service",
+   "reqd": 1
+  },
+  {
+   "fieldname": "estimated_end_time",
+   "fieldtype": "Time",
+   "label": "Estimated End Time",
+   "read_only": 1
+  },
+  {
+   "default": "Scheduled",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Scheduled\nCompleted\nCancelled"
+  },
+  {
+   "fieldname": "total_amount",
+   "fieldtype": "Currency",
+   "label": "Total Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sales_invoice",
+   "fieldtype": "Link",
+   "label": "Sales Invoice",
+   "options": "Sales Invoice"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-02-12 12:33:42.995965",
+ "modified_by": "Administrator",
+ "module": "Healthcare Appointments",
+ "name": "Patient Appointment",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
