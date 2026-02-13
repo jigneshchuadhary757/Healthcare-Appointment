@@ -53,6 +53,9 @@ pip install frappe-bench
 bench init frappe-bench --frappe-branch version-15
 cd frappe-bench
 
+migrate required to apply patches for the defaults
+# bench --site site.name migrate 
+
 # Required System Configuration
 1. Company
 Must have default currency set
