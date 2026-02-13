@@ -255,5 +255,11 @@ fixtures = [
         "filters": [
             ["doc_type", "=", "Patient Appointment"]
         ]
+    },
+    {
+        "doctype": "Workspace",
+        "filters": [
+            ["module", "=", "HealthCare Appointment"]
+        ]
     }
 ]

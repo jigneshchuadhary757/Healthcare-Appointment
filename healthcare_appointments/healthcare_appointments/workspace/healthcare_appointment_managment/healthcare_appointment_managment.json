@@ -1,0 +1,55 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"8kG_ptcXpR\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">HealthCare Appointment Managment</span>\",\"col\":12}},{\"id\":\"APKHnZKAjM\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Book Appointment\",\"col\":3}},{\"id\":\"-wuc-mkkYb\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Services\",\"col\":3}},{\"id\":\"3__TH8mFgL\",\"type\":\"paragraph\",\"data\":{\"text\":\"&nbsp;\",\"col\":12}},{\"id\":\"Yk-5d4v7mS\",\"type\":\"paragraph\",\"data\":{\"text\":\"&nbsp;\",\"col\":12}},{\"id\":\"Pp651uDPEG\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\"><b>Today's Invoices &amp; Appointments</b></span>\",\"col\":12}},{\"id\":\"PbEBNBsWWR\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Bills\",\"col\":4}},{\"id\":\"CPQWqJeuju\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Today's Appointments\",\"col\":4}}]",
+ "creation": "2026-02-13 16:11:44.531691",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "table_2",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "HealthCare Appointment Managment",
+ "links": [],
+ "modified": "2026-02-13 16:31:57.242912",
+ "modified_by": "Administrator",
+ "module": "Healthcare Appointments",
+ "name": "HealthCare Appointment Managment",
+ "number_cards": [
+  {
+   "label": "Today's Appointments",
+   "number_card_name": "Today's Appointments"
+  },
+  {
+   "label": "Total Bills",
+   "number_card_name": "Total Invoice"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Book Appointment",
+   "link_to": "Patient Appointment",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Services",
+   "link_to": "Healthcare Service",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "HealthCare Appointment Managment"
+}
