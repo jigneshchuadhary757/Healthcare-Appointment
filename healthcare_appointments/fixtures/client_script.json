@@ -1,0 +1,13 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Patient Appointment",
+  "enabled": 1,
+  "modified": "2026-02-12 14:24:58.039182",
+  "module": "Healthcare Appointments",
+  "name": "Patient Appointment",
+  "script": "frappe.ui.form.on(\"Patient Appointment\", {\n\n    service: function(frm) {\n        if (frm.doc.service) {\n\n            frappe.call({\n                method: \"healthcare_appointments.healthcare_appointments.doctype.patient_appointment.patient_appointment.get_service_price\",\n                args: {\n                    service: frm.doc.service\n                },\n                callback: function(r) {\n                    if (r.message) {\n                        frm.set_value(\"total_amount\", r.message);\n                    }\n                }\n            });\n            calculate_end(frm);\n        }\n    },\n\n    appointment_time: function(frm) {\n        calculate_end(frm);\n    }\n});\n\nfunction calculate_end(frm) {\n    if (frm.doc.service && frm.doc.appointment_time) {\n        frappe.call({\n            method: \"healthcare_appointments.healthcare_appointments.doctype.patient_appointment.patient_appointment.calculate_end_time\",\n            args: {\n                service: frm.doc.service,\n                appointment_time: frm.doc.appointment_time\n            },\n            callback: function(r) {\n                if (r.message) {\n                    frm.set_value(\"estimated_end_time\", r.message);\n                }\n            }\n        });\n    }\n}\n",
+  "view": "Form"
+ }
+]

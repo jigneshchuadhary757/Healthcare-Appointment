@@ -242,3 +242,18 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+
+fixtures = [
+    {
+        "doctype": "Client Script",
+        "filters": [
+            ["dt", "=", "Patient Appointment"]
+        ]
+    },
+    {
+        "doctype": "Web Form",
+        "filters": [
+            ["doc_type", "=", "Patient Appointment"]
+        ]
+    }
+]
