@@ -79,12 +79,13 @@
    "fieldname": "sales_invoice",
    "fieldtype": "Link",
    "label": "Sales Invoice",
-   "options": "Sales Invoice"
+   "options": "Sales Invoice",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-02-12 12:33:42.995965",
+ "modified": "2026-02-12 16:32:54.450154",
  "modified_by": "Administrator",
  "module": "Healthcare Appointments",
  "name": "Patient Appointment",
